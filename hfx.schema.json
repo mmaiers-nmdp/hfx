@@ -49,11 +49,6 @@
         "license": {
           "$ref": "#/$defs/license"
         },
-        "checkSum": {
-          "type": "string",
-          "pattern": "^[a-fA-F0-9]{32}$",
-          "description": "MD5 checksum represented as a 32-character hexadecimal string."
-        },
         "hfxID": {
           "type": "string",
           "format": "uri",
