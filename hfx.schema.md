@@ -25,7 +25,6 @@ See the full embedded schema below for exact constraints.
   - `frequencyLocation` (string): either a URI (e.g., `file://` or `http://`) or the literal `inline`.
   - `frequencyFileHeader` (object, optional): mapping of expected CSV field names to actual header strings.
   - `license` (object)
-  - `checkSum` (string): MD5 checksum (32 hex chars).
 
 - `frequencyData` (array, optional): inlined frequency records. Each item has:
   - `haplotype` (string): GL String
@@ -102,11 +101,6 @@ See the full embedded schema below for exact constraints.
         },
         "license": {
           "$ref": "#/$defs/license"
-        },
-        "checkSum": {
-          "type": "string",
-          "pattern": "^[a-fA-F0-9]{32}$",
-          "description": "MD5 checksum represented as a 32-character hexadecimal string."
         }
       },
       "required": [
